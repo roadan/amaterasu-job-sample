@@ -4,11 +4,11 @@ flow:
     - name: start
       type: spark
       file: file.scala
-      group: 1
+      group: spark
     - name: step2
       type: spark
       file: file2.scala
-      group: 1
+      group: spark
       error:        
         name: error
         type: spark
