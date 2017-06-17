@@ -1,6 +1,10 @@
 ---
 job-name:    amaterasu-test
 flow:
+    - name: python1
+      type: pyspark
+      group: pyspark
+      file: pyfile1.py
     - name: start
       type: spark
       file: file.scala
@@ -14,8 +18,5 @@ flow:
         type: spark
         group: spark
         file: error.scala
-    - name: python1
-      type: pyspark
-      group: pyspark
-      file: pyfile1.py
+
 ...
