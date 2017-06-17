@@ -12,5 +12,6 @@ flow:
       error:        
         name: error
         type: spark
+        group: spark
         file: error.scala
 ...
