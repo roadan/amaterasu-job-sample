@@ -3,7 +3,7 @@ job-name:    amaterasu-test
 flow:
     - name: python1
       type: pyspark
-      group: pyspark
+      group: spark
       file: pyfile1.py
     - name: start
       type: spark
