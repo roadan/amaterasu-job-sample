@@ -5,6 +5,11 @@ flow:
       type: pyspark
       group: spark
       file: pyfile1.py
+    - name: python2
+      type: pyspark
+      group: spark
+      file: pyfile2.py
+
 #    - name: start
 #      type: spark
 #      file: file.scala
