@@ -1,16 +1,39 @@
 ---
 job-name:    amaterasu-test
 flow:
+    - name: python1
+      type: pyspark
+      group: spark
+      file: pyfile1.py
+    - name: python2
+      type: pyspark
+      group: spark
+      file: pyfile2.py
+
+#    - name: start
+#      type: spark
+#      file: file.scala
+#      group: spark
+#    - name: step2
+#      type: spark
+#      file: file2.scala
+#      group: spark
+#      error:
+#        name: error
+#        type: spark
+#        group: spark
+#        file: error.scala
+
     - name: start
       runner:
           group: spark
-          type: scala        
+          type: scala
       file: file.scala
       exports:
           odd: parquet
     - name: step2
       runner:
           group: spark
-          type: scala 
+          type: scala
       file: file2.scala
 ...
