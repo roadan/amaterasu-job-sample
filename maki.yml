@@ -26,12 +26,12 @@ flow:
 
     - name: start
       runner:
-          group: pyspark
+          group: pyspa
           type: pyspark
       file: pyfile1.py
     - name: step2
       runner:
-          group: pyspark
+          group: spark
           type: pyspark
       file: pyfile2.py
 ...
