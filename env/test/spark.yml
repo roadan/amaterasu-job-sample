@@ -1,2 +1,1 @@
-spark.executor.extraJavaOptions: -XX:+PrintGCDetails 
-spark.executor.memory: 1g
+
